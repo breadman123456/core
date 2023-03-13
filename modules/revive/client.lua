@@ -1,0 +1,7 @@
+AddEventHandler('onClientMapStart', function()
+	Citizen.Trace("Autospawn has been enabled.")
+	exports.spawnmanager:spawnPlayer()
+	Citizen.Wait(2500)
+	exports.spawnmanager:setAutoSpawn(false)
+	Citizen.Trace("Autospawn has been disabled.")
+end)
