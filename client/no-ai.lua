@@ -8,7 +8,8 @@ local function removeAI(playerPed, playerPos)
     SetScenarioPedDensityMultiplierThisFrame(0.0, 0.0)
 
     RemoveVehiclesFromGeneratorsInArea(playerPos.x - 500.0, playerPos.y - 500.0, playerPos.z - 500.0, playerPos.x + 500.0, playerPos.y + 500.0, playerPos.z + 500.0);
-    
+    ClearAreaOfCops(playerPos.x, playerPos.y, playerPos.z, 400.0)
+
     SetGarbageTrucks(0)
     SetRandomBoats(0)
     
